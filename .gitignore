@@ -1,0 +1,10 @@
+# データ・セット
+input/
+toxic/input/
+
+# チェックポイント
+kernel/.ipynb_checkpoints/
+toxic/.ipynb_checkpoints/
+
+#Mac用
+.DS_Store
