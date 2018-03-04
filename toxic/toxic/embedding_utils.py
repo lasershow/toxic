@@ -5,15 +5,6 @@ import hashlib
 def read_embedding_list(file_path):
     embedding_word_dict = {}
     embedding_list = []
-    with open(file_path, 'rb') as f:
-        hasher = hashlib.sha256()  # Make empty hasher to update piecemeal
-        while True:
-            block = f.read(64 * (1 << 20)) # Read 64 MB at a time; big, but not memory busting
-            if not block:  # Reached EOF
-                break
-        hasher.update(block)  # Update with new block
-    print('SHA256 of file is %s' % hasher.hexdigest())
-
     with open(file_path) as f:
 
         # import pdb; pdb.set_trace()
