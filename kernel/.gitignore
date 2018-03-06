@@ -1,3 +1,6 @@
 /logs/
+/logs-2/
 *.csv
 *.hdf5
+/submissions/
+
